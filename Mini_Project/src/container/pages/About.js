@@ -3,10 +3,10 @@ import Header from '../partials/Header';
 
 export default function About() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden bg-gray-500">
 
       {/* Header */}
-      <Header IsBgLight={true} IsTextBlack={true} />
+      <Header  NavBgDark={true} LightText={true} />
 
     
 

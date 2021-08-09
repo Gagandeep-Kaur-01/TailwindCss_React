@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../images/Project_logo.svg'
 
 
-function Header({IsBgGray, IsTextWhite, NavBgLight, DarkText}) {
+function Header({IsBgGray, IsTextWhite, NavBgLight, DarkText, NavBgDark, LightText }) {
     return (
         <header className="absolute w-full">
             <div className="px-4 max-w-prose sm:mx-12 sm:px-6">
@@ -17,7 +17,7 @@ function Header({IsBgGray, IsTextWhite, NavBgLight, DarkText}) {
 
                         <ul className="flex flex-wrap items-center flex-grow">
                             <li>
-                                <Link to="/about" className={`hover:bg-gray-200 hover:text-black px-6 py-2 flex items-center transistion duration-150 ease-in-out ${NavBgLight && "bg-gray-200"} ${DarkText && "text-black"}`}>
+                                <Link to="/about" className={`hover:bg-gray-200 hover:text-black px-6 py-2 flex items-center transistion duration-150 ease-in-out ${NavBgLight && "bg-gray-200"} ${DarkText && "text-black"} ${NavBgDark && "bg-gray-800"} ${LightText && "text-white"}`}>
                                     About
                                 </Link>
                             </li>
