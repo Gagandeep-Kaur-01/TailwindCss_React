@@ -6,7 +6,7 @@ function Home() {
     <div className="flex flex-col min-h-screen overflow-hidden bg-gray-900">
 
       {/* Header */}
-      <Header IsBgGray={true} IsTextWhite={true}/>
+      <Header NavBgLight={true} DarkText={true} />
 
     
 
