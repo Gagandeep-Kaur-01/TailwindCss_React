@@ -1,7 +1,18 @@
+import React from 'react';
+import Header from '../partials/Header';
+
 function App() {
     return (
+      <div className="flex flex-col min-h-screen overflow-hidden bg-gray-700">
+
+      {/* Header */}
+      <Header NavBgDark={true} LightText={true} />
+
+    
+
+    
       <section className="App h-screen w-full flex justify-center items-center">
-      <div className="w-full max-w-md bg-gray-800" >
+      <div className="w-full max-w-md bg-black" >
         <form action="" className=" bg-black shadow-md rounded px-8 py-8 pt-8">
           <div className="px-4 pb-4">
             <label htmlFor="email" className="text-sm block font-bold pb-2 text-white">EMAIL ADDRESS</label>
@@ -17,6 +28,7 @@ function App() {
         </form>
       </div>
     </section>
+    </div>
     );
   }
   
